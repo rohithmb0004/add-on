@@ -1,0 +1,102 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: green;
+}
+
+/*h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}*/
+
+h4{
+    text-align: center;
+}
+
+.obj p{
+    width: 600px;
+    text-align: justify;
+    padding-left: 30%;
+}
+
+.obj h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+}
+
+.media a{
+    margin: 0 10 px;
+
+}
+
+.obj img{
+    border-radius: 50%;
+    margin-left: 40vw;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+
+body{
+    margin: 0;
+    background-color: #9ec9ea;
+}
+
+.project
+    {
+        padding: 1cm;
+        margin: 35px;
+        width: 50%;
+        border: 3px solid black;
+    }
+    .project img {
+        width: 100%;
+        height: 40%;
+        object-fit: contain;
+    }
+
+    
+    .box{
+        display: flex;
+        margin-bottom: 5rem;
+        background-color: white;
+    }
+
+.contact button:hover{
+    background-color: green;
+}

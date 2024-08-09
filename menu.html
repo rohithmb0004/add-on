@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="contact_me.html">Contact me</a></li>
+        <li><a href="projects.html">My projects</a></li>
+        <li><a href="home.html">Home</a></li>
+    </ul>
+    <section class="obj">
+        <br>
+        <img src="rohith.jpg" alt="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" width="200">
+        <h1>Rohith M B</h1>
+        <h4>ABOUT ME</h4>
+        <p>Hi, I'm Rohith M B, a dedicated student at Saintgits College of Engineering, currently pursuing a degree in
+            Computer Science. With a passion for technology and a keen interest in innovative solutions, I am committed
+            to honing my skills and contributing to the ever-evolving tech landscape. As I navigate through my academic
+            journey, I am excited to explore new opportunities and challenges in the world of computer science.
+        </p>
+    </section>
+
+    <section class="contact">
+        <br>
+        <input type="email" id="mail" placeholder="Your Email">
+        <button onclick="sendEmail()">Click me</button>
+        <hr>
+        <form action="/action_page.php">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit">
+          </form>
+    </section>
+    <br>
+
+    <div class="box">
+        <div class="project">
+            <img src="https://miro.medium.com/v2/resize:fit:512/1*doAg1_fMQKWFoub-6gwUiQ.png" width="100s">
+            <h3>Internship</h3>
+            <p>Internship on mongodb, flask, python</p>
+        </div>
+
+        <div class="project">
+            <img src="https://media-cdn.oulu.fi/styles/main_image/s3/images/KaavojaLiitutaululla.jpg?itok=Abo3a-ME"
+                width="100">
+            <h3>Workshop</h3>
+            <p>Workshop on quarto</p>
+        </div>
+
+        <div class="project">
+            <img src="https://camo.githubusercontent.com/9cdc3420d979964926542c5cd2bfea87652e508b61ae3992d8dcca82483bad89/68747470733a2f2f7777772e63726561746976656974696e737469747574652e636f6d2f696d616765732f636f757273652f636f757273655f313636333035323035362e6a7067"
+                width="100">
+            <h3>Workshop</h3>
+            <p>Workshop on Web Development</p>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="media">
+            <a href="https://www.instagram.com/rohith_m_b?igsh=MWdnMzBqMXd6MnRxYw=="><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png"
+                    width="50"></a>
+            <a href="https://www.facebook.com/"><img
+                    src="https://cdn2.downdetector.com/static/uploads/logo/FB-f-Logo__blue_512.png" width="50"></a>
+            <a href="https://wa.me/6282721502"><img
+                    src="https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
+                    width="50"></a>
+
+        </div>
+
+
+    </footer>
+    <script type="text/javascript">
+        function sendEmail(){
+            var email = document.getElementById("mail").value;
+            var subject = "Request to Connect-reg.";
+            var body = "Hello, I would like to connect with you.";
+            window.location.href = "mailto:"+encodeURIComponent(email)+"?subject=" + encodeURIComponent(subject)+
+            "&body=" +encodeURIComponent(body) + "&cc=rohithmb.csb2327@saintgits.org"
+        }
+    </script>
+</body>
